@@ -1,4 +1,4 @@
-package lordmonoxide.nopunching;
+package gradientmod.nopunching;
 
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;

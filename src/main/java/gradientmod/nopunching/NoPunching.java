@@ -1,4 +1,4 @@
-package lordmonoxide.nopunching;
+package gradientmod.nopunching;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;

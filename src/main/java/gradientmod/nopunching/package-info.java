@@ -1,6 +1,6 @@
 @MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
-package lordmonoxide.nopunching;
+package gradientmod.nopunching;
 
 import mcp.MethodsReturnNonnullByDefault;
 

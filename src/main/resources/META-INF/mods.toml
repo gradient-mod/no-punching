@@ -3,7 +3,7 @@ modLoader="javafml" #mandatory
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
 loaderVersion="[28,)" #mandatory (28 is current forge version)
 # A URL to refer people to when problems occur with this mod
-issueTrackerURL="https://github.com/LordMonoxide/no-punching/issues/" #optional
+issueTrackerURL="https://github.com/gradient-mod/no-punching/issues/" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
@@ -15,13 +15,13 @@ displayName="No Punching" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 #TODO updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="https://github.com/LordMonoxide/no-punching/" #optional
+displayURL="https://github.com/gradient-mod/no-punching/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #TODO logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
 #credits="Thanks for this example mod goes to Java" #optional
 # A text field displayed in the mod UI
-authors="Corey Frenette" #optional
+authors="Corey Frenette (LordMonoxide)" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 A highly-configrable mod that prevents breaking blocks over a certain hardness without tools.
