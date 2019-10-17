@@ -46,7 +46,7 @@ public class NoPunching {
       }
     }
 
-    if(Config.MODE.get() == Config.Mode.SLOW) {
+    if(Config.PREVENTION_MODE.get() == Config.PreventionMode.SLOW) {
       event.setNewSpeed(event.getOriginalSpeed() * Config.SPEED_MULTIPLIER.get());
     } else {
       event.setCanceled(true);

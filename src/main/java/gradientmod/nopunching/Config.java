@@ -11,12 +11,12 @@ import java.nio.file.Path;
 
 @Mod.EventBusSubscriber
 public class Config {
-  private static final String GENERAL_CATEGORY = "general";
   private static final ForgeConfigSpec SERVER_CONFIG;
 
+  private static final String GENERAL_CATEGORY = "general";
   public static final ForgeConfigSpec.BooleanValue ENABLED;
   public static final ForgeConfigSpec.ConfigValue<Float> MAX_HARDNESS;
-  public static final ForgeConfigSpec.EnumValue<Mode> MODE;
+  public static final ForgeConfigSpec.EnumValue<PreventionMode> PREVENTION_MODE;
   public static final ForgeConfigSpec.ConfigValue<Float> SPEED_MULTIPLIER;
 
   static {
@@ -32,9 +32,9 @@ public class Config {
       .comment("The maximum hardness a player can break without the correct tool")
       .define("max_hardness", 1.0f);
 
-    MODE = builder
+    PREVENTION_MODE = builder
       .comment("Choose whether to slow or outright prevent block-breaking")
-      .defineEnum("mode", Mode.PREVENT);
+      .defineEnum("mode", PreventionMode.PREVENT);
 
     SPEED_MULTIPLIER = builder
       .comment("If set to \"slow\" mode, how slow should it be?")
@@ -54,13 +54,14 @@ public class Config {
       .autosave()
       .autoreload()
       .writingMode(WritingMode.REPLACE)
+      .preserveInsertionOrder()
       .build();
 
     configData.load();
     SERVER_CONFIG.setConfig(configData);
   }
 
-  public enum Mode {
+  public enum PreventionMode {
     SLOW, PREVENT
   }
 }
